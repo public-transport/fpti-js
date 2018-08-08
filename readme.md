@@ -4,6 +4,7 @@
 
 **_Proposal, work in progress!_**
 
+[![npm version](https://img.shields.io/npm/v/fpti.svg)](https://www.npmjs.com/package/fpti)
 [![license](https://img.shields.io/github/license/juliuste/fpti-js.svg?style=flat)](license)
 [![chat on gitter](https://badges.gitter.im/juliuste.svg)](https://gitter.im/juliuste)
 
