@@ -10,13 +10,13 @@ Search stations/stops/regions by *location*.
 
 ### `opt = {}`
 
-Note that any `fpti-js` module might provide custom options as long as they don't use reserved option attributes.
+`Required` options are supported by every module. For non-`required` options, the main FPTI principle still applies: If a certain feature/option is available, it must be provided as described below.
+
+Note that modules might provide additional options as long as they don't use reserved option attributes.
 
 Attribute | Description | Required\* | Value type | Default
 ----------|-------------|------------|------------|--------
 `distance` | Maximum distance in meters | ❌ | `number` | `null`
-
-\*Required options are supported by every `fpti-js` module that provides this method.
 
 
 

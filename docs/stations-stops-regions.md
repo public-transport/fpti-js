@@ -6,7 +6,7 @@ Get **all** stations/stops/regions of the network.
 
 ### `opt = {}`
 
-There are currently no standardized options for this method. However, note that any `fpti-js` module might provide custom options as long as they don't use reserved option attributes.
+There are currently no standardized options for this method. However, note that modules might provide additional options as long as they don't use reserved option attributes.
 
 ## Output
 
