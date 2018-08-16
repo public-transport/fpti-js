@@ -6,7 +6,7 @@ Search stations/stops/regions by *location*.
 
 ### `location`
 
-[FPTF `location` object](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#location-objects).
+[FPTF `location` object](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#location-objects) with `longitude` and `latitude` information.
 
 ### `opt = {}`
 
