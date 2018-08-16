@@ -16,11 +16,12 @@ Note that modules might provide additional options as long as they don't use res
 
 Attribute | Description | Required\* | Value type | Default
 ----------|-------------|------------|------------|--------
-`when` | Journey date | ✅ | [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/date) | `new Date()`
-`whenRepresents` | What time does `when` represent | ✅ | `"departure"` or `"arrival"` | `"departure"`
+`when` | Journey date, synonym to `departureAfter` | ✅ | [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/date) | `new Date()`
 `results` | Max. number of results returned | ✅ | `Number` | `null`
 `interval` | Results for how many minutes after / before `when` (depending on `whenRepresents`) | ✅ | `Number` | `null`
 `transfers` | Max. number of transfers | ✅ | `Number` | `null`
+`departureAfter` | List journeys with a departure (first leg) after this date, mutually exclusive with `arrivalBefore` | ✅ | [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/date) | `new Date()`
+`arrivalBefore` | List journeys with an arrival (last leg) before this date, mutually exclusive with `departureAfter` | ❌ | [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/date) | `null`
 `via` | Via station | ❌ | [`station` object or `id`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#station)\* | `null`
 `currency` | Currency for `journey.price` | ❌ | [ISO 4217 code](https://en.wikipedia.org/wiki/ISO_4217#Active_codes) | `null`
 

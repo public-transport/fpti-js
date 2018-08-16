@@ -16,10 +16,13 @@ Note that modules might provide additional options as long as they don't use res
 
 Attribute | Description | Required\* | Value type | Default
 ----------|-------------|------------|------------|--------
-`when` | Stopover date | ✅ | [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/date) | `new Date()`
+`when` | Stopover date, synonym to `departureAfter` | ✅ | [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/date) | `new Date()`
 `results` | Max. number of results returned | ✅ | `Number` | `null`
 `interval` | Results for how many minutes after `when` | ✅ | `Number` | `null`
+`departureAfter` | List stopovers with a departure after this date, mutually exclusive with `arrivalBefore` | ✅ | [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/date) | `new Date()`
+`arrivalBefore` | List stopovers with an arrival before this date, mutually exclusive with `departureAfter` | ❌ | [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/date) | `null`
 `direction` | Only show departures heading to this station | ❌ | [`station` object or `id`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#station)\* | `null`
+
 
 \*Or other FPTF types, if the module supports it..
 
