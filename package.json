@@ -22,9 +22,9 @@
 			"email": "mail@jannisr.de>"
 		}
 	],
-	"homepage": "https://github.com/juliuste/fpti-js",
-	"repository": "juliuste/fpti-js",
-	"bugs": "https://github.com/juliuste/fpti-js/issues",
+	"homepage": "https://github.com/public-transport/fpti-js",
+	"repository": "public-transport/fpti-js",
+	"bugs": "https://github.com/public-transport/fpti-js/issues",
 	"main": "readme.md",
 	"files": [
 		"docs/*.md",

@@ -5,7 +5,7 @@
 **_Proposal, work in progress!_**
 
 [![npm version](https://img.shields.io/npm/v/fpti.svg)](https://www.npmjs.com/package/fpti)
-[![license](https://img.shields.io/github/license/juliuste/fpti-js.svg?style=flat)](license)
+[![license](https://img.shields.io/github/license/public-transport/fpti-js.svg?style=flat)](license)
 [![chat on gitter](https://badges.gitter.im/juliuste.svg)](https://gitter.im/juliuste)
 
 ## API
@@ -31,4 +31,4 @@ Method | Feature description | Returns
 
 ## Contributing
 
-We are looking forward to discuss & extend this format further! If you have a question or want to propose changes, visit [the issues page](https://github.com/juliuste/fpti-js/issues). Keep our [contributing guidelines in mind](contributing.md). Note that, by participating in this project, you commit to the [code of conduct](code-of-conduct.md).
+We are looking forward to discuss & extend this format further! If you have a question or want to propose changes, visit [the issues page](https://github.com/public-transport/fpti-js/issues). Keep our [contributing guidelines in mind](contributing.md). Note that, by participating in this project, you commit to the [code of conduct](code-of-conduct.md).
