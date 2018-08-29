@@ -20,6 +20,10 @@
 		{
 			"name": "Jannis R",
 			"email": "mail@jannisr.de>"
+		},
+		{
+			"name": "ialokim",
+			"url": "https://github.com/ialokim"
 		}
 	],
 	"homepage": "https://github.com/public-transport/fpti-js",
