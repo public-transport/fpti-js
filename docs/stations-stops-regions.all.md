@@ -1,4 +1,4 @@
-# `stations([opt])` / `stops([opt])` / `regions([opt])`
+# `stations.all([opt])` / `stops.all([opt])` / `regions.all([opt])`
 
 Get **all** stations/stops/regions of the network.
 
@@ -17,9 +17,9 @@ Returns a [`Readable`](https://nodejs.org/api/stream.html#stream_readable_stream
 ```js
 const module = require('fpti-module')
 
-const stationStream = module.stations()
-const stopStream = module.stops()
-const regionStream = module.regions({moduleSpecificOption: 'value'})
+const stationStream = module.stations.all()
+const stopStream = module.stops.all()
+const regionStream = module.regions.all({moduleSpecificOption: 'value'})
 
 stationStream.on('data', item => {
     // item is an FPTF station object
