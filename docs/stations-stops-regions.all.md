@@ -21,7 +21,7 @@ The `features` object would look like this for a module which only supports the 
 
 ## Output
 
-Returns a [`Readable`](https://nodejs.org/api/stream.html#stream_readable_streams) stream in object mode that emits [`station`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#station) / [`stop`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#stop) / [`region`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#region) FPTF objects.
+Returns a [`Readable`](https://nodejs.org/api/stream.html#stream_readable_streams) stream in object mode that emits [`station`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#station) / [`stop`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#stop) / [`region`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#region) FPTF@1 objects.
 
 ## Example
 

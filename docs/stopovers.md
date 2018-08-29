@@ -6,7 +6,7 @@ Stopovers (departures and arrivals) at a given station (or optionally other loca
 
 ### `station`
 
-[FPTF `station` object or `id`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#station). Modules might optionally also accept other FPTF object types like `location` or `stop`, however only stopovers at `station`s will be supported by **every module**.
+[FPTF@1 `station` object or `id`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#station). Modules might optionally also accept other FPTF object types like `location` or `stop`, however only stopovers at `station`s will be supported by **every module**.
 
 ### `opt = {}`
 
@@ -41,7 +41,7 @@ The `features` object would look like this for a module which only supports the 
 
 ## Output
 
-Returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/promise) that resolves in an [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array) of [`stopover` FPTF objects](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#stopover).
+Returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/promise) that resolves in an [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array) of [`stopover` FPTF@1 objects](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#stopover).
 
 ## Example
 

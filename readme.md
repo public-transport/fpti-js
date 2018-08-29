@@ -12,7 +12,7 @@
 
 The purpose of this specification is to outline a standardized API for the *most common* features of public transportation libraries, such as *Journey planning*, *Departures/Arrivals* or *Station search*. While most libraries certainly don't cover all of the following features, the basic principle for modules complying to `fpti-js` is that **if a certain feature is available, it must be provided with the API described below**. Some modules may also include **additional functionalities** that are not covered within this specification, **as long as they don't use the reserved `fpti-js` method names**.
 
-Furthermore, even for additional features that are not covered within the following spec, `fpti-js` modules **return data in the [Friendly Public Transport Format](https://github.com/public-transport/friendly-public-transport-format/) `v1.1.2` wherever possible**.
+Furthermore, even for additional features that are not covered within the following spec, `fpti-js` modules **return data in the [Friendly Public Transport Format](https://github.com/public-transport/friendly-public-transport-format/) `v1.x.x` wherever possible**.
 
 ### Method overview
 

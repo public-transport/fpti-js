@@ -6,7 +6,7 @@ Journeys between stations (or optionally other locations).
 
 ### `origin` and `destination`
 
-[FPTF `station` objects or `id`s](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#station). Modules might optionally also accept other FPTF object types like `region` or `stop`, however only journeys between `station`s will be supported by **every module**.
+[FPTF@1 `station` objects or `id`s](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#station). Modules might optionally also accept other FPTF object types like `region` or `stop`, however only journeys between `station`s will be supported by **every module**.
 
 ### `opt = {}`
 
@@ -44,7 +44,7 @@ The `features` object would look like this for a module which only supports the 
 
 ## Output
 
-Returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/promise) that resolves in an [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array) of [`journey` FPTF objects](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#journey).
+Returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/promise) that resolves in an [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array) of [`journey` FPTF@1 objects](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#journey).
 
 ## Example
 
