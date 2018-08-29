@@ -8,6 +8,17 @@ Get **all** stations/stops/regions of the network.
 
 There are currently no standardized options for this method. However, note that modules might provide additional options as long as they don't use reserved option attributes.
 
+#### `features`
+
+The `features` object would look like this for a module which only supports the required options:
+
+```js
+{
+    // no required options for this method
+    // additionalOption: 'description of this option'
+}
+```
+
 ## Output
 
 Returns a [`Readable`](https://nodejs.org/api/stream.html#stream_readable_streams) stream in object mode that emits [`station`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#station) / [`stop`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#stop) / [`region`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#region) FPTF objects.
@@ -35,4 +46,6 @@ regionStream.on('data', item => {
     // item is an FPTF region object
     console.log(item)
 })
+
+console.log(module.stations.all.features) // all options
 ```

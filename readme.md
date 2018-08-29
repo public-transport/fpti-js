@@ -16,6 +16,8 @@ Furthermore, even for additional features that are not covered within the follow
 
 ### Method overview
 
+All `method`s expose an object `method.features` which contains all supported options and simple descriptions of those options as keys and values, respectively. See the method specifications for examples.
+
 Method | Feature description | Returns
 -------|---------------------|--------
 [`stations.all([opt])` / `stops.all([opt])` / `regions.all([opt])`](docs/stations-stops-regions.all.md) | **All** stations/stops/regions of the network. | [`Readable`](https://nodejs.org/api/stream.html#stream_readable_streams) → [`station`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#station) / [`stop`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#stop) / [`region`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#region)

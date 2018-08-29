@@ -14,7 +14,7 @@ Stopovers (departures and arrivals) at a given station (or optionally other loca
 
 Note that modules might provide additional options as long as they don't use reserved option attributes.
 
-Attribute | Description | Required\* | Value type | Default
+Attribute | Description | Required | Value type | Default
 ----------|-------------|------------|------------|--------
 `when` | Stopover date, synonym to `departureAfter` | ✅ | [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/date) | `new Date()`
 `results` | Max. number of results returned | ✅ | `Number` | `null`
@@ -23,8 +23,21 @@ Attribute | Description | Required\* | Value type | Default
 `arrivalBefore` | List stopovers with an arrival before this date, mutually exclusive with `departureAfter` | ❌ | [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/date) | `null`
 `direction` | Only show departures heading to this station | ❌ | [`station` object or `id`](https://github.com/public-transport/friendly-public-transport-format/blob/master/spec/readme.md#station)\* | `null`
 
-
 \*Or other FPTF types, if the module supports it..
+
+#### `features`
+
+The `features` object would look like this for a module which only supports the required options:
+
+```js
+{
+    when: 'Stopover date, synonym to `departureAfter`',
+    results: 'Max. number of results returned',
+    interval: 'Results for how many minutes after `when`',
+    departureAfter: 'List stopovers with a departure after this date'
+    // additionalOption: 'description of this option'
+}
+```
 
 ## Output
 
@@ -52,4 +65,6 @@ stopovers.then(data => {
     // data is an array of FPTF stopover objects
     console.log(data)
 })
+
+console.log(module.stopovers.features) // all options
 ```

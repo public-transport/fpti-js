@@ -14,7 +14,7 @@ Journeys between stations (or optionally other locations).
 
 Note that modules might provide additional options as long as they don't use reserved option attributes.
 
-Attribute | Description | Required\* | Value type | Default
+Attribute | Description | Required | Value type | Default
 ----------|-------------|------------|------------|--------
 `when` | Journey date, synonym to `departureAfter` | ✅ | [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/date) | `new Date()`
 `results` | Max. number of results returned | ✅ | `Number` | `null`
@@ -26,6 +26,21 @@ Attribute | Description | Required\* | Value type | Default
 `currency` | Currency for `journey.price` | ❌ | [ISO 4217 code](https://en.wikipedia.org/wiki/ISO_4217#Active_codes) | `null`
 
 \*Or other FPTF types, if the module supports it. Similar to [`origin` and `destination`](#origin-and-destination).
+
+#### `features`
+
+The `features` object would look like this for a module which only supports the required options:
+
+```js
+{
+    when: 'Stopover date, synonym to `departureAfter`',
+    results: 'Max. number of results returned',
+    interval: 'Results for how many minutes after `when`',
+    transfers: 'Max. number of transfers',
+    departureAfter: 'List stopovers with a departure after this date'
+    // additionalOption: 'description of this option'
+}
+```
 
 ## Output
 
@@ -56,4 +71,6 @@ journeys.then(data => {
     // data is an array of FPTF journey objects
     console.log(data)
 })
+
+console.log(module.journeys.features) // all options
 ```

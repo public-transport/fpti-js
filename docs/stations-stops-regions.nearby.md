@@ -14,12 +14,21 @@ Search stations/stops/regions by *location*.
 
 Note that modules might provide additional options as long as they don't use reserved option attributes.
 
-Attribute | Description | Required\* | Value type | Default
+Attribute | Description | Required | Value type | Default
 ----------|-------------|------------|------------|--------
 `results` | Max. number of results returned | ✅ | `Number` | `null`
 `distance` | Maximum distance in meters | ❌ | `number` | `null`
 
+#### `features`
 
+The `features` object would look like this for a module which only supports the required options:
+
+```js
+{
+    results: 'Max. number of results returned'
+    // additionalOption: 'description of this option'
+}
+```
 
 ## Output
 
@@ -44,4 +53,6 @@ nearbyStations.then(data => {
     // data is an array of FPTF station objects
     console.log(data)
 })
+
+console.log(module.stations.nearby.features) // all options
 ```
