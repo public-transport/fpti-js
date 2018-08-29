@@ -16,6 +16,7 @@ Note that modules might provide additional options as long as they don't use res
 
 Attribute | Description | Required\* | Value type | Default
 ----------|-------------|------------|------------|--------
+`results` | Max. number of results returned | ✅ | `Number` | `null`
 `distance` | Maximum distance in meters | ❌ | `number` | `null`
 
 

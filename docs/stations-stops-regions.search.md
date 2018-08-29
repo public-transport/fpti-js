@@ -10,7 +10,13 @@ Non-empty `string`.
 
 ### `opt = {}`
 
-There are currently no standardized options for this method. However, note that modules might provide additional options as long as they don't use reserved option attributes.
+`Required` options are supported by every module. For non-`required` options, the main FPTI principle still applies: If a certain feature/option is available, it must be provided as described below.
+
+Note that modules might provide additional options as long as they don't use reserved option attributes.
+
+Attribute | Description | Required\* | Value type | Default
+----------|-------------|------------|------------|--------
+`results` | Max. number of results returned | ✅ | `Number` | `null`
 
 ## Output
 
