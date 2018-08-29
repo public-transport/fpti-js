@@ -1,7 +1,7 @@
 {
 	"name": "fpti",
 	"description": "Standardized API for public transportation client libraries.",
-	"version": "0.3.1",
+	"version": "0.3.2",
 	"keywords": [
 		"public",
 		"transport",
