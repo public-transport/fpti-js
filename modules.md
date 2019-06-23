@@ -9,5 +9,6 @@ Module | Operator | 🏳️ | First added | [`stations.all`](docs/stations-stops
 [`interrail`](https://github.com/juliuste/interrail) | [*Interrail\**](https://www.interrail.eu/) | 🇪🇺 | *2018-11-06* in `3.0.0` |  ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌
 [`flix`](https://github.com/juliuste/flix) | [FlixBus (Meinfernbus) / FlixTrain](https://www.flixbus.com/) | 🇪🇺 | *2019-06-23* in `5.0.0` |  ✅ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌
 [`korail`](https://github.com/juliuste/korail) | [Korail](https://www.letskorail.com/) | 🇰🇷 | *2019-06-23* in `2.0.0` |  ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌
+[`train-ose`](https://github.com/juliuste/train-ose) | [TrainOSE](https://www.trainose.gr/) | 🇬🇷 | *2019-06-23* in `1.0.0` |  ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌
 
 \*Not an operator, probably still interesting though
